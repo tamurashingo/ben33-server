@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: @database.url@
+    username: @database.username@
+    password: @database.password@
+    driverClassName: @database.driver@
+  messages:
+    basename: messages
+    cache-seconds: -1
+    encoding: UTF-8
+mybatis:
+  configuration:
+    map_underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+
